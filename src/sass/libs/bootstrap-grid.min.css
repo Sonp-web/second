@@ -1013,6 +1013,11 @@
         width: 33.33333333%
     }
 
+    .col-xl-48 {
+        flex: 0 0 auto;
+        width: 40%
+    }
+
     .col-xl-5 {
         flex: 0 0 auto;
         width: 41.66666667%
@@ -1026,6 +1031,11 @@
     .col-xl-7 {
         flex: 0 0 auto;
         width: 58.33333333%
+    }
+
+    .col-xl-72 {
+        flex: 0 0 auto;
+        width: 60%
     }
 
     .col-xl-8 {
