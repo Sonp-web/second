@@ -43,6 +43,12 @@
     &__item {
       padding: 0 10px;
     }
+    &__item-left {
+      width: 40%;
+    }
+    &__item-right {
+      width: 60%;
+    }
     &__text-right {
       display: block;
       inline-size: 556px;
