@@ -124,25 +124,78 @@
     <section class="works">
         <div class="container">
             <h2 class="title-h2">check out our works</h2>
-            <div class="swiper works__slider">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/src/img/homepage/tea-6675004_1280 1.jpg" alt="tea-1"></div>
-                    <div class="swiper-slide"><img src="/src/img/homepage/tea-7968441_1280 1.jpg" alt="tea-2"></div>
-                    <div class="swiper-slide"><img src="/src/img/homepage/tea-ceremony-7807230_1280 1.jpg" alt="tea-3"></div>
-                    <div class="swiper-slide"><img src="/src/img/homepage/tea-7968441_1280 1.jpg" alt="tea-2"></div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+            <div class="works__wrapper">
+                <div class="swiper works__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/src/img/homepage/tea-6675004_1280 1.jpg" alt="tea-1"></div>
+                        <div class="swiper-slide"><img src="/src/img/homepage/tea-7968441_1280 1.jpg" alt="tea-2"></div>
+                        <div class="swiper-slide"><img src="/src/img/homepage/tea-ceremony-7807230_1280 1.jpg"
+                                alt="tea-3">
+                        </div>
+                        <div class="swiper-slide"><img src="/src/img/homepage/tea-7968441_1280 1.jpg" alt="tea-2"></div>
+                    </div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                    <!-- If we need navigation buttons -->
+
+                </div>
+                <span class="icon-left-open works__slider-nav"></span>
+                <span class="icon-right-open works__slider-nav"></span>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
-
+    <footer class="footer">
+        <div class="white-block"></div>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper-newsletter">
+                    <div class="footer__subtitle">newsletter</div>
+                    <form action="#" class="footer__form">
+                        <p class="footer__text">Keep up to date with news and promotions</p>
+                        <input type="email" name="email" id="email" class="footer__input"
+                            placeholder="Enter your e-mail" required>
+                        <label for="checkbox" class="footer__label">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="footer__checkbox">I agree with
+                            the <a href="#">terms</a>
+                        </label>
+                        <button class="btn-submit footer__btn"></button>
+                    </form>
+                </div>
+                <div class="footer__wrapper-links">
+                    <div class="footer__links-item">
+                        <div class="footer__subtitle">discover</div>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-item">
+                        <div class="footer__subtitle">shopping</div>
+                        <ul>
+                            <li><a href="#">Catalog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-item">
+                        <div class="footer__subtitle">information</div>
+                        <ul>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrapper-folow">
+                    <div class="footer__subtitle">follow us</div>
+                    <div class="footer__wrapper-icons">
+                        <span class="icon-facebook"></span>
+                        <span class="icon-instagram"></span>
+                        <span class="icon-pinterest-circled"></span>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__info">© Copyright 2025, Ceramic soul</p>
+        </div>
+    </footer>
     <script type="module" src="/src/js/main.js"></script>
 </body>
 
