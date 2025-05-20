@@ -8,6 +8,7 @@
   text-align: center;
 }
 @mixin button {
+  display: block;
   border: 1px solid $dark;
   border-radius: 2px;
   text-align: center;
