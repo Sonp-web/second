@@ -54,6 +54,8 @@
     line-height: 200%;
     color: $light;
     a {
+      display: block;
+      margin-left: 5px;
       text-decoration: none;
       color: #a22dc6;
     }

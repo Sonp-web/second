@@ -76,7 +76,9 @@
 }
 @media screen and (min-width: 768px) {
   .git {
-    position: relative;
+    .container {
+      position: relative;
+    }
     &__input,
     &__textarea {
       width: 300px;
