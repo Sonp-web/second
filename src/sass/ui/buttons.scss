@@ -28,6 +28,22 @@
     border: 1px solid $ui-disabled;
   }
 }
+.btn-submit {
+  @include button;
+  width: 90px;
+  height: 40px;
+  border: 1px solid $light;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $light;
+  background-color: transparent;
+  &:disabled {
+    border: 1px solid $ui-disabled;
+    color: $ui-disabled;
+  }
+}
 @media screen and (min-width: 1200px) {
   .btn-default {
     &:hover {

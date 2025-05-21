@@ -1,5 +1,65 @@
+@use "/src/sass/base/variables.scss" as *;
 .footer {
+  .container {
+    padding-right: 57px;
+  }
+  background-color: $dark;
   .white-block {
+    background-color: white;
     height: 60px;
+    margin-bottom: 50px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $light;
+  }
+  &__text {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $light;
+  }
+  &__input {
+    width: 100%;
+    background-color: $dark;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $ui-active;
+    font-size: 14px;
+    color: $ui-active;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: $ui-active;
+    }
+  }
+  &__checkblock {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: $light;
+    a {
+      text-decoration: none;
+      color: #a22dc6;
+    }
+  }
+  &__checkbox {
+    margin-right: 15px;
+    border: 1px solid $light;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+  }
+  &__btn {
+    margin-top: 20px;
   }
 }
