@@ -2,18 +2,18 @@
 .footer {
   padding-bottom: 50px;
   background-color: $dark;
-  .container {
-    padding-right: 57px;
-  }
   &__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
     row-gap: 40px;
   }
   .white-block {
-    background-color: white;
-    height: 60px;
+    background-color: $light;
     margin-bottom: 50px;
+  }
+  &__wrapper-newsletter {
+    width: 293px;
   }
   &__subtitle {
     font-weight: 500;
@@ -114,5 +114,31 @@
     font-size: 14px;
     text-align: center;
     color: $light;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__wrapper {
+      column-gap: 197px;
+    }
+    &__wrapper-links {
+      column-gap: 66px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__wrapper {
+      column-gap: 164px;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .footer {
+    &__wrapper {
+      padding-top: 80px;
+      column-gap: 314px;
+    }
   }
 }

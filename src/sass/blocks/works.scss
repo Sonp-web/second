@@ -1,6 +1,6 @@
 @use "/src/sass/base/variables.scss" as *;
 .works {
-  padding-bottom: 43px;
+  padding-bottom: 45px;
   .container {
     position: relative;
   }
@@ -43,7 +43,7 @@
 }
 @media screen and (min-width: 1200px) {
   .works {
-    padding-bottom: 38px;
+    padding-bottom: 40px;
     &__wrapper {
       position: relative;
     }
