@@ -19,7 +19,7 @@ close.addEventListener("click", () => {
   menu.classList.remove("header__menu_active");
   document.body.style.overflow = "";
 });
-/*try {
+try {
   const tabs = document.querySelectorAll(".catalog__tab");
   const contents = document.querySelectorAll(".catalog__content-item");
 
@@ -31,13 +31,18 @@ close.addEventListener("click", () => {
 
       // Добавляем активный класс к нажатому табу и показываем соответствующий контент
       tab.classList.add("catalog__tab_active");
-      contents[index].style.display = "block";
+      const id = tab.id;
+      contents.forEach((item, i) => {
+        if (item.id == id || item.id.split(" ").includes(id)) {
+          contents[i].style.display = "block";
+        }
+      });
     });
   });
 
   // Показываем первый контент при загрузке
-  contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
-} catch (e) {}*/
+  contents.forEach((c, i) => (c.style.display = i < 3 ? "block" : "none"));
+} catch (e) {}
 
 // Обратите внимание, что значение block (в двух местах) можно спокойно поменять на flex, если вам это необходимо
 try {

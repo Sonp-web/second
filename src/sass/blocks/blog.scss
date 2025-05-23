@@ -1,0 +1,95 @@
+@use "/src/sass/base/variables.scss" as *;
+.blog {
+  padding-top: 50px;
+  &__title {
+    margin-top: 50px;
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    row-gap: 40px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $dark;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    background-color: $light;
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+    &_h3 {
+      text-align: start;
+    }
+    &_img {
+      width: 100%;
+    }
+    &_wrapper {
+      display: flex;
+      
+      flex-direction: column;
+      margin: 25px;
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    margin: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $dark;
+  }
+  &__btn {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    &__wrapper {
+      padding: 25px;
+      padding-bottom: 0;
+    }
+    &__data {
+      flex-direction: row;
+      &_img {
+        width: 50%;
+      }
+      &_wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog {
+    &__wrapper {
+      flex-direction: row;
+      gap: 50px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    &__card {
+      width: 520px;
+    }
+    &__data {
+      &_img {
+        width: 50%;
+        height: 240px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .blog {
+    &__wrapper {
+      align-items: normal;
+    }
+    &__card {
+      width: 670px;
+    }
+  }
+}

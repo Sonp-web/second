@@ -44,6 +44,31 @@
     color: $ui-disabled;
   }
 }
+.btn-read {
+  @include button;
+  width: 145px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $dark;
+  border: 1px solid $dark;
+  border-radius: 2px;
+  background-color: transparent;
+  &:hover {
+    outline: 1px solid $ceramic;
+    border: none;
+    color: $ceramic;
+  }
+  &:active {
+    color: $dark;
+    border: 1px solid $ceramic;
+  }
+  &:disabled {
+    color: $ui-disabled;
+    border: 1px solid $ui-disabled;
+  }
+}
 @media screen and (min-width: 1200px) {
   .btn-default {
     &:hover {

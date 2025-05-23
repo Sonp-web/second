@@ -4,9 +4,11 @@
   padding-top: 50px;
   &__title {
     margin-top: 60px;
+    font-size: 20px;
   }
   &__tabs {
     display: flex;
+    align-items: flex-start;
     row-gap: 13px;
     column-gap: 50px;
     flex-wrap: wrap;
@@ -37,9 +39,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: flex-start;
     &-item {
       width: 340px;
-      height: 275px;
+      min-height: 275px;
       border: 1px solid $dark;
       box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
       background: $light;
@@ -48,8 +51,7 @@
         width: 100%;
       }
       &_wrapper {
-        margin-top: 11px;
-        margin-left: 12px;
+        margin: 11px;
         font-weight: 500;
         font-size: 16px;
         color: #000;
@@ -72,15 +74,16 @@
       display: block;
       background-color: $dark;
       width: 200px;
-      height: 1px;
+      height: 2px;
       top: 0;
       left: 0;
     }
     &__vertical {
       position: absolute;
+      display: block;
       background-color: $dark;
       width: 200px;
-      height: 1px;
+      height: 2px;
       left: -100px;
       top: 100px;
       transform: rotate(-90deg);
@@ -102,7 +105,7 @@
       row-gap: 25px;
       &-item {
         width: 285px;
-        height: 250px;
+        min-height: 250px;
       }
     }
   }
