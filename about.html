@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for Ceramic soul brand">
     <meta name="author" content="Awesome student">
-    <title>Catalog</title>
+    <title>Blog</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section class="catalog">
+    <section class="about">
         <div class="container">
             <div class="header">
                 <div class="header__menu">
@@ -53,50 +53,53 @@
                     </ul>
                 </nav>
             </div>
-            <h1 class="title-h1 catalog__title">our pottery</h1>
-            <div class="catalog__tabs">
-                <button class="catalog__tab catalog__tab_active" id="for_tea">for tea</button>
-                <button class="catalog__tab" id="for_kitchen">for kitchen</button>
-                <button class="catalog__tab" id="for_plants">for plants</button>
+            <h2 class="title-h2 about__title">where it all began</h2>
+            <div class="about__wrapper-first">
+                <img src="/src/img/about/crafts-5276736_1280 1.jpg" alt="" class="about__img">
+                <p class="about__text">Our small pottery workshop began as a simple passion project, rooted in a love
+                    for handmade artistry and traditional craftsmanship. What started with a single wheel and a few
+                    lumps of clay has grown into a cozy creative space where ideas take shape and stories are told
+                    through every piece. Inspired by timeless techniques and the beauty of natural materials, we’ve
+                    built a place where both beginners and experienced artists can come together, share their skills,
+                    and celebrate the art of pottery. Each creation reflects our journey—shaped by hand, fired with
+                    care, and made to be cherished.<br><br>
+
+                    Over the years, our workshop has become more than just a place to create—it’s a community. Friends,
+                    families, and curious visitors gather here to learn, connect, and experience the joy of working with
+                    clay. From intimate masterclasses to collaborative projects, we believe in the power of handmade art
+                    to bring people together and spark creativity in unexpected ways.<br><br>
+
+                    Every piece that leaves our studio carries a bit of our story, blending tradition with personal
+                    expression. Whether it’s a simple cup or an intricate vase, our ceramics are crafted to be both
+                    beautiful and functional, adding warmth and authenticity to any space.</p>
             </div>
-            <div class="catalog__content">
-                <span class="catalog__horizontal"></span>
-                <span class="catalog__vertical"></span>
-                <div class="catalog__content-item" id="for_tea">
-                    <img src="/src/img/pottery/tea-3057645_1280 1.jpg" alt="" class="catalog__content-item_img">
-                    <div class="catalog__content-item_wrapper">
-                        <p class="catalog__content-item_description">Terracotta Whisper</p>
-                        <p class="catalog__content-item_cost">19.99 €</p>
-                    </div>
+            <h2 class="title-h2 about__title">get in touch</h2>
+            <div class="row git__wrapper">
+                <div class="col-xl-6 git__item git__item-img col-xxl-5">
+                    <img src="/src/img/homepage/tea.jpg" alt="tea" class="git__img">
                 </div>
-                <div class="catalog__content-item" id="for_tea">
-                    <img src="/src/img/pottery/tea-7968441_1280 2.jpg" alt="" class="catalog__content-item_img">
-                    <div class="catalog__content-item_wrapper">
-                        <p class="catalog__content-item_description">Clay Bloom</p>
-                        <p class="catalog__content-item_cost">24.99 €</p>
-                    </div>
-                </div>
-                <div class="catalog__content-item" id="for_tea">
-                    <img src="/src/img/pottery/tea-ceremony-7807230_1280 2.jpg" alt=""
-                        class="catalog__content-item_img">
-                    <div class="catalog__content-item_wrapper">
-                        <p class="catalog__content-item_description">Earthen Grace</p>
-                        <p class="catalog__content-item_cost">16.99 €</p>
-                    </div>
-                </div>
-                <div class="catalog__content-item" id="for_kitchen">
-                    <img src="/src/img/pottery/tea-6675004_1280 2.jpg" alt="" class="catalog__content-item_img">
-                    <div class="catalog__content-item_wrapper">
-                        <p class="catalog__content-item_description">Moss & Moon</p>
-                        <p class="catalog__content-item_cost">21.99 €</p>
-                    </div>
-                </div>
-                <div class="catalog__content-item" id="for_kitchen for_plants">
-                    <img src="/src/img/pottery/tea-3057645_1280 1.jpg" alt="" class="catalog__content-item_img">
-                    <div class="catalog__content-item_wrapper">
-                        <p class="catalog__content-item_description">Solace Set</p>
-                        <p class="catalog__content-item_cost">29.99 €</p>
-                    </div>
+                <div class="col-xl-6 git__item git__item-form col-xxl-7">
+                    <form action="#" class="git__form">
+                        <fieldset class="git__fieldset">
+                            <div class="git__input-block">
+                                <label for="name" class="git__label">Name</label>
+                                <input type="text" class="git__input" name="name" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="git__input-block">
+                                <label for="email" class="git__label">Email</label>
+                                <input type="email" class="git__input" name="email" id="email" placeholder="Email"
+                                    required>
+                            </div>
+                        </fieldset>
+                        <label for="question" class="git__label">Your question</label>
+                        <textarea name="question" id="question" class="git__textarea" placeholder="Question"
+                            required></textarea>
+
+                        <label for="checkbox" class="git__label git__checkblock">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="git__checkbox">
+                            I agree with the <a href="#">terms</a></label>
+                        <button class="btn-send git__btn">send request</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -107,7 +110,7 @@
             <div class="footer__wrapper">
                 <div class="footer__wrapper-newsletter">
                     <div class="footer__subtitle">newsletter</div>
-                    <form action="#" class="footer__form">h
+                    <form action="#" class="footer__form">
                         <p class="footer__text">Keep up to date with news and promotions</p>
                         <input type="email" name="email" id="email" class="footer__input"
                             placeholder="Enter your e-mail" required>
