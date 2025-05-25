@@ -26,9 +26,9 @@
                     </div>
                     <nav class="header__menu-nav">
                         <ul>
-                            <li><a href="#" class="header__menu-link">catalog</a></li>
-                            <li><a href="#" class="header__menu-link">blog</a></li>
-                            <li><a href="#" class="header__menu-link">about</a></li>
+                            <li><a href="catalog.html" class="header__menu-link">catalog</a></li>
+                            <li><a href="blog.html" class="header__menu-link">blog</a></li>
+                            <li><a href="about.html" class="header__menu-link">about</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -39,7 +39,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#" class="header__logo"><img src="/src/logo/logo.svg" alt="logo"></a>
+                    <a href="index.html" class="header__logo"><img src="/src/logo/logo.svg" alt="logo"></a>
                     <div class="header__icons">
                         <a href="#"><span class="icon-search"></span></a>
                         <a href="#"><span class="icon-shopping-bag"></span></a>
@@ -48,9 +48,9 @@
                 </div>
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="" class="header__link">catalog</a></li>
-                        <li><a href="" class="header__link">blog</a></li>
-                        <li><a href="" class="header__link">about</a></li>
+                        <li><a href="catalog.html" class="header__menu-link">catalog</a></li>
+                        <li><a href="blog.html" class="header__menu-link">blog</a></li>
+                        <li><a href="about.html" class="header__menu-link">about</a></li>
                     </ul>
                 </nav>
             </div>
@@ -74,7 +74,7 @@
                     <h3 class="title-h3 activites__item_title">
                         our store
                     </h3>
-                    <img src="/src/img/homepage/store.jpg"  alt="" class="activites__img">
+                    <img src="/src/img/homepage/store.jpg" alt="" class="activites__img">
                     <p class="activites__text">
                         Welcome to <span class="activites__text_colorful">Ceramic Soul</span>, where each piece
                         tells a story of craftsmanship and creativity. Our
@@ -123,10 +123,14 @@
                         <label for="question" class="git__label">Your question</label>
                         <textarea name="question" id="question" class="git__textarea" placeholder="Question"
                             required></textarea>
+                        <div class="error-message"></div>
 
                         <label for="checkbox" class="git__label git__checkblock">
                             <input type="checkbox" name="checkbox" id="checkbox" class="git__checkbox">
-                            I agree with the <a href="#">terms</a></label>
+
+                            I agree with the <a href="#">terms</a>
+                        </label>
+                        <div class="checkbox-error-message"></div>
                         <button class="btn-send git__btn">send request</button>
                     </form>
                 </div>
@@ -169,11 +173,13 @@
                         <p class="footer__text">Keep up to date with news and promotions</p>
                         <input type="email" name="email" id="email" class="footer__input"
                             placeholder="Enter your e-mail" required>
+                        <div class="error-message"></div>
                         <label for="checkbox-2" class="footer__checkblock">
                             <input type="checkbox" name="checkbox-2" id="checkbox-2" class="footer__checkbox">I agree
                             with
                             the <a href="#">terms</a>
                         </label>
+                        <div class="checkbox-2-error-message"></div>
                         <button class="btn-submit footer__btn">submit</button>
                     </form>
                 </div>
@@ -181,14 +187,14 @@
                     <div class="footer__links-item">
                         <div class="footer__subtitle">discover</div>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                         </ul>
                     </div>
                     <div class="footer__links-item">
                         <div class="footer__subtitle">shopping</div>
                         <ul>
-                            <li><a href="#">Catalog</a></li>
+                            <li><a href="catalog.html">Catalog</a></li>
                         </ul>
                     </div>
                     <div class="footer__links-item">
