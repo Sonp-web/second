@@ -46,6 +46,7 @@
 }
 @media screen and (min-width: 1200px) {
   .promo {
+    overflow: hidden;
     &__potter {
       display: block;
       width: 450px;
@@ -58,8 +59,13 @@
       justify-content: end;
       gap: 10px;
     }
+    &__cta {
+      animation-name: slideIn;
+      animation-duration: 3s;
+    }
   }
 }
+
 @media screen and (min-width: 1920px) {
   .promo {
     padding-top: 40px;
@@ -79,7 +85,6 @@
       height: 460px;
     }
     &__btn {
-      
       margin-top: 50px;
     }
   }

@@ -1,0 +1,9 @@
+@keyframes slideIn {
+  0% {
+    transform: translateX(80%);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
